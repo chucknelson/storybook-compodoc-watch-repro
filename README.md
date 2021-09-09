@@ -1,4 +1,30 @@
-# StorybookCompodocWatchRepro
+# Storybook Compodoc Watch Reproduction Project
+
+This was created for the Github issue [storybook > Addon-docs: Dynamically update props tables for Angular #8672](https://github.com/storybookjs/storybook/issues/8672).
+
+Do the following to see the webpack reload issue:
+1. Clone this repo
+2. Run `yarn` to install packages
+3. Run `yarn storybook`, which will start storybook and compodoc in watch mode.
+4. When the Storybook UI shows up in your browser, view the Button > Primary story.
+5. Open the browser console so you can see errors/warnings.
+6. Make a simple change to the Button component - for example, add a new size value like "supersize" in `src/stories/button.component.ts`:
+```js
+...
+@Input()
+size: 'small' | 'medium' | 'large' | 'supersize' = 'medium';
+...
+```
+7. Save the change, watch compodoc and storybook rebuild, and see the following warning in the browser console:
+```
+Ignored an update to unaccepted module ./documentation.json -> ./.storybook/preview.js -> ./.storybook/preview.js-generated-config-entry.js
+```
+
+To see the new size you added, you'll need to manually refresh the browser.
+
+---
+
+# Angular Boilerplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
 
