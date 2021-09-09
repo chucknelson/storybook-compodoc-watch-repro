@@ -6,8 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
-    "storybook": "yarn docs:json && start-storybook -p 6006",
+    "docs:json": "compodoc --tsconfig ./tsconfig.json --exportFormat json --output .",
+    "docs:json:watch": "yarn docs:json --serve --watch",
+    "storybook": "concurrently --kill-others --names compodoc,storybook \"yarn:docs:json:watch\" \"start-storybook -p 6006\"",
     "build-storybook": "yarn docs:json && build-storybook"
   },
   "private": true,
@@ -40,6 +41,7 @@
     "@types/node": "^12.11.1",
     "@webcomponents/custom-elements": "^1.5.0",
     "babel-loader": "^8.2.2",
+    "concurrently": "^6.2.1",
     "typescript": "~4.3.5"
   }
 }

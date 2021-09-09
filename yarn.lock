@@ -15,12 +15,20 @@
     "@jridgewell/resolve-uri" "1.0.0"
     sourcemap-codec "1.4.8"
 
-"@angular-devkit/architect@0.1202.4", "@angular-devkit/architect@0.1202.5":
+"@angular-devkit/architect@0.1202.4":
   version "0.1202.4"
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/architect/-/architect-0.1202.4.tgz#0db02f48f8863b3cfb68d6a8cb5ae781953d414c"
   integrity sha512-RBatkiiZWGX7/qYYaWVNAzaF3E8TCEt9dRfAoZSaLy/JLQLT3xjX+qT4bBC/XPdC8SQCWvMjW3IjfYRaKTBv1g==
   dependencies:
     "@angular-devkit/core" "12.2.4"
+    rxjs "6.6.7"
+
+"@angular-devkit/architect@0.1202.5":
+  version "0.1202.5"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/architect/-/architect-0.1202.5.tgz#6e08b4b5d629a37479fb7aacda08e755541809ae"
+  integrity sha512-HiF8RceDrvP7m8Qm53KWVpekESX0UIK4/tOg9mgFMcS/2utRnPzuu4WbfrcY9DRrsoMWLXQs6j/UVXqf8PzXJw==
+  dependencies:
+    "@angular-devkit/core" "12.2.5"
     rxjs "6.6.7"
 
 "@angular-devkit/build-angular@~12.2.4":
@@ -99,26 +107,38 @@
     webpack-subresource-integrity "1.5.2"
 
 "@angular-devkit/build-optimizer@0.1202.5":
-  version "0.1202.4"
-  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/build-optimizer/-/build-optimizer-0.1202.4.tgz#844ad7003eaa384a66a475ed07b9d76a9f80e334"
-  integrity sha512-kLZsqNAxaMFdG5GVoyfvvD+v+Iq/0S7xAbuTOa4qwmI946e+vfqO55rHEyRo2in6PVRP8UgH/1fYFgAC0P+pfg==
+  version "0.1202.5"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/build-optimizer/-/build-optimizer-0.1202.5.tgz#c5eb6a5f453750fdf50af92df33dea65884ea835"
+  integrity sha512-ni3OyBQq7y1Jk9U7CtwWMRoI+1TWjQYVdGRWt5JgqvLk0hZcaLoapGwUypBV+CdKvC0/0V+k84RiO5wvs5XpFQ==
   dependencies:
     source-map "0.7.3"
     tslib "2.3.0"
     typescript "4.3.5"
 
 "@angular-devkit/build-webpack@0.1202.5":
-  version "0.1202.4"
-  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/build-webpack/-/build-webpack-0.1202.4.tgz#808a6695be213ef882d6979495650f81e7f83f54"
-  integrity sha512-XUZWt60M855mLmy02jYZ3yByMQf6sTYrMTfCnz62GILv7snauSfx9SqKYrD37sZ4UMCd4UNRmlcPtcjdRkLoPQ==
+  version "0.1202.5"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/build-webpack/-/build-webpack-0.1202.5.tgz#96f345e78f71744b22e1c64ddfda9c93c98cc3e3"
+  integrity sha512-wqU2t2zUCZi+fjhuZzFko3eTyqXP6vjdqA3BZQwr3pEhL7IEOvlN4EUYqWAi+h+4SrTtAhk6vZ7m41Hr0y2Ykw==
   dependencies:
-    "@angular-devkit/architect" "0.1202.4"
+    "@angular-devkit/architect" "0.1202.5"
     rxjs "6.6.7"
 
-"@angular-devkit/core@12.2.4", "@angular-devkit/core@12.2.5":
+"@angular-devkit/core@12.2.4":
   version "12.2.4"
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/core/-/core-12.2.4.tgz#0514a29989abc5b16ed6014b0109472e9fc3dc04"
   integrity sha512-lONchANfqBHE0UgqK1PFcaBwpT/FetM8atuLjbhgdM1VcR6lVLzyZImhR12gtNWJ5nledhMp8QeGkFvO3KCdxw==
+  dependencies:
+    ajv "8.6.2"
+    ajv-formats "2.1.0"
+    fast-json-stable-stringify "2.1.0"
+    magic-string "0.25.7"
+    rxjs "6.6.7"
+    source-map "0.7.3"
+
+"@angular-devkit/core@12.2.5":
+  version "12.2.5"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@angular-devkit/core/-/core-12.2.5.tgz#928fc35b28e1ed84243b0c09db97be1a9c85acdb"
+  integrity sha512-UBo0Q9nVGPxC+C1PONSzaczPLv5++5Q7PC2orZepDbWmY0jUDwe9VVJrmp8EhLZbzVKFpyCIs1ZE8h0s0LP1zA==
   dependencies:
     ajv "8.6.2"
     ajv-formats "2.1.0"
@@ -1816,9 +1836,9 @@
     glob-to-regexp "^0.3.0"
 
 "@ngtools/webpack@12.2.5":
-  version "12.2.4"
-  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@ngtools/webpack/-/webpack-12.2.4.tgz#0c6ec97d1deee15698c44b34fc3c20277673fb2a"
-  integrity sha512-jWxp5LwhGoIZY/iSWMpOgjSYS0XMq7bQunxdJBWJ9y8Lysw7lofJkk1KfWjx+oWBSNoOI0E2tH82I4DL6oth4w==
+  version "12.2.5"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/@ngtools/webpack/-/webpack-12.2.5.tgz#f0077e302434b00bc67924142c88a844f320f7b9"
+  integrity sha512-wc+ovfJucCxAjoP3ExnJll8K3nAoNCiFyDEO8dgHkriY/IWhGdwOu1eduHgfT/mWS40Awj/inJJir9oTi4YBVg==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -4917,6 +4937,21 @@ concat-stream@^1.5.0, concat-stream@~1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+concurrently@^6.2.1:
+  version "6.2.1"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/concurrently/-/concurrently-6.2.1.tgz#d880fc1d77559084732fa514092a3d5109a0d5bf"
+  integrity sha512-emgwhH+ezkuYKSHZQ+AkgEpoUZZlbpPVYCVv7YZx0r+T7fny1H03r2nYRebpi2DudHR4n1Rgbo2YTxKOxVJ4+g==
+  dependencies:
+    chalk "^4.1.0"
+    date-fns "^2.16.1"
+    lodash "^4.17.21"
+    read-pkg "^5.2.0"
+    rxjs "^6.6.3"
+    spawn-command "^0.0.2-1"
+    supports-color "^8.1.0"
+    tree-kill "^1.2.2"
+    yargs "^16.2.0"
+
 connect-history-api-fallback@^1.6.0:
   version "1.6.0"
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/connect-history-api-fallback/-/connect-history-api-fallback-1.6.0.tgz#8b32089359308d111115d81cad3fceab888f97bc"
@@ -5457,6 +5492,11 @@ dashdash@^1.12.0:
   integrity sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=
   dependencies:
     assert-plus "^1.0.0"
+
+date-fns@^2.16.1:
+  version "2.23.0"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/date-fns/-/date-fns-2.23.0.tgz#4e886c941659af0cf7b30fafdd1eaa37e88788a9"
+  integrity sha512-5ycpauovVyAk0kXNZz6ZoB9AYMZB4DObse7P3BPWmyEjXNORTI8EJ6X0uaSAq4sCHzM1uajzrkr6HnsLQpxGXA==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0:
   version "2.6.9"
@@ -11633,7 +11673,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@6.6.7, rxjs@~6.6.0:
+rxjs@6.6.7, rxjs@^6.6.3, rxjs@~6.6.0:
   version "6.6.7"
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
@@ -12154,6 +12194,11 @@ space-separated-tokens@^1.0.0:
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/space-separated-tokens/-/space-separated-tokens-1.1.5.tgz#85f32c3d10d9682007e917414ddc5c26d1aa6899"
   integrity sha512-q/JSVd1Lptzhf5bkYm4ob4iWPjx0KiRe3sRFBNrVqbJkFaBm5vbbowy1mymoPNLRa52+oadOhJ+K49wsSeSjTA==
 
+spawn-command@^0.0.2-1:
+  version "0.0.2-1"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/spawn-command/-/spawn-command-0.0.2-1.tgz#62f5e9466981c1b796dc5929937e11c9c6921bd0"
+  integrity sha1-YvXpRmmBwbeW3Fkpk34RycaSG9A=
+
 spdx-correct@^3.0.0:
   version "3.1.1"
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/spdx-correct/-/spdx-correct-3.1.1.tgz#dece81ac9c1e6713e5f7d1b6f17d468fa53d89a9"
@@ -12571,7 +12616,7 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-supports-color@^8.0.0:
+supports-color@^8.0.0, supports-color@^8.1.0:
   version "8.1.1"
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/supports-color/-/supports-color-8.1.1.tgz#cd6fc17e28500cff56c1b86c0a7fd4a54a73005c"
   integrity sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==
@@ -12871,7 +12916,7 @@ traverse@^0.6.6:
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
   integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
 
-tree-kill@1.2.2:
+tree-kill@1.2.2, tree-kill@^1.2.2:
   version "1.2.2"
   resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
   integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
@@ -13917,6 +13962,19 @@ yargs@^13.3.2:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
+
+yargs@^16.2.0:
+  version "16.2.0"
+  resolved "https://nexusdigital.corp.internal.citizensbank.com:8443/nexus/repository/npm-all/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
+  integrity sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
+  dependencies:
+    cliui "^7.0.2"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.5"
+    yargs-parser "^20.2.2"
 
 yargs@^17.0.0:
   version "17.1.1"
